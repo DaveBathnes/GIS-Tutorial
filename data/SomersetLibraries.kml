@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Geocoded addresses</name><Style id="red"><IconStyle><Icon><href>https://www.doogal.co.uk/images/red.png</href><scale>1.0</scale></Icon></IconStyle></Style>
+<Style id="green"><IconStyle><Icon><href>https://www.doogal.co.uk/images/green.png</href><scale>1.0</scale></Icon></IconStyle></Style>
+<Style id="blue"><IconStyle><Icon><href>https://www.doogal.co.uk/images/blue.png</href><scale>1.0</scale></Icon></IconStyle></Style>
+<Style id="yellow"><IconStyle><Icon><href>https://www.doogal.co.uk/images/yellow.png</href><scale>1.0</scale></Icon></IconStyle></Style>
+<Style id="black"><IconStyle><Icon><href>https://www.doogal.co.uk/images/black.png</href><scale>1.0</scale></Icon></IconStyle></Style>
+<Style id="white"><IconStyle><Icon><href>https://www.doogal.co.uk/images/white.png</href><scale>1.0</scale></Icon></IconStyle></Style>
+<Style id="pink"><IconStyle><Icon><href>https://www.doogal.co.uk/images/pink.png</href><scale>1.0</scale></Icon></IconStyle></Style>
+<Style id="orange"><IconStyle><Icon><href>https://www.doogal.co.uk/images/orange.png</href><scale>1.0</scale></Icon></IconStyle></Style>
+<Style id="grey"><IconStyle><Icon><href>https://www.doogal.co.uk/images/grey.png</href><scale>1.0</scale></Icon></IconStyle></Style>
+<Style id="brown"><IconStyle><Icon><href>https://www.doogal.co.uk/images/brown.png</href><scale>1.0</scale></Icon></IconStyle></Style>
+<Placemark><name>&quot;The Library, Falkirk Square, Crewkerne, Somerset&quot;</name><Point><coordinates>-2.795877,50.883008,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, 7-9 Fore Street, Dulverton, Somerset&quot;</name><Point><coordinates>-3.550936,51.040142,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Church Street, Bishops Lydeard, Somerset&quot;</name><Point><coordinates>-3.1881,51.060827,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Binford Place, Bridgwater, Somerset&quot;</name><Point><coordinates>-3.001039,51.128428,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;Quaperlake Street, Bruton, Somerset&quot;</name><Point><coordinates>-2.450738,51.113501,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Princess Street, Burnham-on-Sea, Somerset&quot;</name><Point><coordinates>-2.996294,51.238118,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Bailey Hill, Castle Cary, Somerset&quot;</name><Point><coordinates>-2.514648,51.089533,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Holyrood Lace Mill, Chard, Somerset&quot;</name><Point><coordinates>-2.963316,50.869792,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Union Street, Cheddar, Somerset&quot;</name><Point><coordinates>-2.775878,51.275825,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Justice Lane, Frome, Somerset&quot;</name><Point><coordinates>-2.320391,51.232772,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;Library Hub, 1 Orchard Court, The Archers Way, Glastonbury, Somerset&quot;</name><Point><coordinates>-2.715553,51.149466,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Alpha House, Market Street, Highbridge, Somerset&quot;</name><Point><coordinates>-2.974107,51.219234,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Ditton Street, Ilminster, Somerset&quot;</name><Point><coordinates>-2.910777,50.924981,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Watley, Langport, Somerset&quot;</name><Point><coordinates>-2.828719,51.038134,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, The Shopping Centre, Martock, Somerset&quot;</name><Point><coordinates>-2.767086,50.975626,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Cross Cottage, North Street, Milborne Port, Somerset&quot;</name><Point><coordinates>-2.461283,50.96765,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Bancks Street, Minehead, Somerset&quot;</name><Point><coordinates>-3.477759,51.205431,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Castle Street, Nether stowey, Bridgwater, Somerset&quot;</name><Point><coordinates>-3.003632,51.127889,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Quantock ouse, Fore Street, North Petherton, Somerset&quot;</name><Point><coordinates>-3.01681,51.089915,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, The Old School Centre, Porlock, Somerset&quot;</name><Point><coordinates>-3.595055,51.209011,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Hillside Children&apos;s Centre, Eastwock Road, Taunton, Somerset&quot;</name><Point><coordinates>-3.106849,51.015344,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Shepton Mallet, Somerset&quot;</name><Point><coordinates>-2.452841,51.11273,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Cox&apos;s Yard, Somerton, Somerset&quot;</name><Point><coordinates>-2.733788,51.055111,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library,St. James&apos; Corner, South Petherton, Somerset&quot;</name><Point><coordinates>-2.810525,50.948076,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, 1 Leigh Road, Street, Somerset&quot;</name><Point><coordinates>-2.926231,51.105097,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Monmouth Hall, Monmouth Road, Yeovil, Somerset&quot;</name><Point><coordinates>-2.617107,50.952113,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Paul Street, Taunton, Somerset&quot;</name><Point><coordinates>-3.100943,51.013269,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, The Esplanade, Watchet, Somerset&quot;</name><Point><coordinates>-3.329193,51.18213,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, 16 Fore Street, Wellington Somerset&quot;</name><Point><coordinates>-3.227977,50.977725,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Union Street, Wells, Somerset&quot;</name><Point><coordinates>-2.648059,51.209001,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Killick Way, Williton, Somerset&quot;</name><Point><coordinates>-3.31975,51.161194,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, Carrington Way, Wincanton, Somerset&quot;</name><Point><coordinates>-2.409408,51.057193,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, 9 The Square, Wiveliscombe, Somerset&quot;</name><Point><coordinates>-3.312284,51.042447,0</coordinates></Point></Placemark>
+<Placemark><name>&quot;The Library, King George Street, Yeovil, Somerset&quot;</name><Point><coordinates>-2.633308,50.942061,0</coordinates></Point></Placemark>
+</Document>
+</kml>

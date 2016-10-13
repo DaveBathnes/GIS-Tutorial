@@ -37,24 +37,28 @@ A spatial reference systems defines how to to plot features on the curved surfac
 
 Geocoding and reverse geocoding are ways of matching address and location data with geo-coordinates.
 
-**Geocoding:** Address -> Geo-coordinates.  Usage example: Plotting a user address search onto a map.
-**Reverse geocoding:** Geo-coordinates -> Address.  Usage example: taking coordinates retrieved from GPS to determine current location.
-
-**Geofencing:**  A feature in a software program that uses the global positioning system (GPS) or radio frequency identification (RFID) to define geographical boundaries. A geofence is a virtual barrier.
+- **Geocoding:** Address -> Geo-coordinates.  Usage example: Plotting a user address search onto a map.
+- **Reverse geocoding:** Geo-coordinates -> Address.  Usage example: taking coordinates retrieved from GPS to determine current location.
+- **Geofencing:**  A feature in a software program that uses the global positioning system (GPS) or radio frequency identification (RFID) to define geographical boundaries. A geofence is a virtual barrier.
 
 ### Exercise: Geocode a batch of addresses
 
 1. Go to [Batch Geocoder](https://www.doogal.co.uk/BatchGeocoding.php)
-2. Copy data from file [/data/SomersetLibraryAddresses.csv](SomersetLibraryAddresses.csv) into input field.
+2. Copy data from file [SomersetLibraryAddresses.csv](/data/SomersetLibraryAddresses.csv) into input field.
 3. Press geocode.
+
+### Exercise: Reverse geocode a batch of coordinates
+1. Go to [Batch reverse geocoder](https://www.doogal.co.uk/BatchReverseGeocoding.php)
+2. Copy data from file [/data/SomersetLibraryCoordinates.csv](/data/SomersetLibraryCoordinates.csv)
+3. Press reverse geocode.
 
 ## Points, lines, and polygons
 
 Typically when dealing with geo-spatial data, this will be in the form of Points, Lines, and Polygons.
 
-**Points** - Individual locations on the ground.
-**Lines** - Linear features made up of coordinates such as route lines.
-**Polygons** - Bounded areas (shapes) made up of coordinates such as local authority boundaries and geofences.
+- **Points** - Individual locations made up of a single coordinate set.
+- **Lines** - Linear features made up of coordinates such as route lines.
+- **Polygons** - Bounded areas (shapes) made up of coordinates such as local authority boundaries and geofences.
 
 ## File formats
 
@@ -64,7 +68,7 @@ There are many different formats for storing geo data.  These are a few of them.
 | ------ | ----------- | ------- |
 | GeoJSON | JavaScript Object Notation (JSON) style geo data. | [/data/Somerset School Catchment Areas 2014-15.geojson](Somerset School Catchment Areas) |
 | Shapefiles | Format developed by ESRI for storing geospatial data.  More than one file!  | [/data/]() | 
-| KML | XML type format for storing geospatial data. Used by Google Earth and Google fusion tables. |  |
+| KML | XML type format for storing geospatial data. Used by Google Earth and Google fusion tables. | [SomersetLibraries](/data/SomersetLibraries.kml) |
 
 ## GIS software
 
@@ -74,15 +78,20 @@ Download and install: [QGIS](Quantum GIS)
 1. Open up QGIS
 2. Choose a 
 
-
 ## WMS and WFS (and WMTS)
 
 WMS and WFS are ways of dealing with geo data through web services.
 
-WMS - Web Map Service.  Typically used to provide map images (typically as raster tiles)
-WFS - Web Feature Service.  Provides feature information, then used to display on a map.
+**WMS** - Web Map Service.  Typically used to provide map images (typically as raster tiles)
+**WFS** - Web Feature Service.  Provides feature information, then used to display on a map.
 
 ## Exercise: Add a WFS layer in QGIS.
+
+| Data | Service URL |
+| ---- | ----------- |
+| 
+
+## Exercise: Add a WMS tile layer.
 
 
 
@@ -98,15 +107,14 @@ Most modern databases have some element of 'spatial' capability.
 Download and install: [PostgreSQL - Open Source database](https://www.postgresql.org/)
 Download and install: [PostGIS - Spatial functionality for PostgreSQL](http://www.postgis.net/)
 
+Take a database table: Libraries
 
-Take a traditional database table: Libraries
-
-| Name | Authority |
-| --------- | ---- |
-| Taunton Library | Somerset |
-| Bath Central Library | Bath and North East Somerset |
-| Box | Wiltshire |
-| Newcastle Central Library | Newcastle |
+| Name | Authority | Latitude | Longitude |
+| --------- | ---- | -------- | --------- |
+| Taunton Library | Somerset |  |  |
+| Bath Central Library | Bath and North East Somerset |  |  |
+| Box | Wiltshire |  |  |
+| Newcastle Central Library | Newcastle |  |  |
 
 
 An individual is a member of Somerset.  Find all libraries in their authority.
@@ -119,16 +127,29 @@ How about the query: Find all libraries within 5 miles of an individual?
 
 ```
 SELECT Name FROM Libraries 
-WHERE ST_DWithin(ST_SetSRID(ST_MakePoint(Lng,Lat)::geography, 4326), ST_SetSRID(ST_MakePoint(-3.106849,51.015344), 4326)::geography, 8046)
+WHERE ST_DWithin(
+    ST_SetSRID(ST_MakePoint(Longitude,Latitude), 4326)::geography, 
+    ST_SetSRID(ST_MakePoint(-3.106849,51.015344), 4326)::geography
+    , 8046)
 ```
+
+- **ST_MakePoint** - Constructs a Point (from the latitude and longitude)
+- **ST_SetSRID** - Instructs the database which spatial reference system we're using.
+- **ST_DWithin** - Returns true if the two geometries are within the specified distance of one another (8046 metres - 5 miles)
 
 ## Web development mapping libraries
 
-JavaScript library: [Leaflet]()
+There are many JavaScript libraries for creating maps that allow for full integration with web development projects.
 
+- [Leaflet](http://leafletjs.com/) - An open source option.
+- [OpenLayers](http://openlayers.org/) - Another open source option.  Can be more confusing!
+- [Google maps](https://developers.google.com/maps/) - Allows you to use Google's map tiles layer and other plugins.
+- [Bing maps](https://www.microsoft.com/maps/choose-your-bing-maps-API.aspx) - The same but from Microsoft.
 
 ### Example: Create leaflet map
-
+1. Go to the [Leaflet quick start guide](http://leafletjs.com/examples/quick-start/)
+2. Follow instructions for creating your first map.
+3. See [example here](LeafletExample.html)
 
 ## Online map tools
 
@@ -137,9 +158,7 @@ Create account: [Carto](https://carto.com/)
 
 ### Example: Carto postcode data.
 
+
 ## Animated maps
 
-An animated map can be a great way of providing a data visualisation.
-
-## Example: Carto animated map from timeline data.
-
+An animated map can be a great way of providing a data visualisation. See []
