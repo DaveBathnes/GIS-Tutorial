@@ -72,11 +72,18 @@ There are many different formats for storing geo data.  These are a few of them.
 
 ## GIS software
 
-Download and install: [QGIS](Quantum GIS)
+The traditional way of working with GIS data is through Desktop applications
 
-## Exercise: Add multiple layers in QGIS
+- [ESRI ArcDesktop](http://www.esri.com/software/arcgis/arcgis-for-desktop) - World leader for GIS software
+- [MapInfo](http://www.pitneybowes.com/us/location-intelligence/geographic-information-systems/mapinfo-pro.html) - Acquired by Pitney Bowes Business Insight
+- [Quantum GIS](http://qgis.org/en/site/) - Open Source option.  Brilliant.
+
+Download and install: [Quantum GIS](http://qgis.org/en/site/)
+
+## Exercise: Add a layer in QGIS
 1. Open up QGIS
-2. Choose a 
+2. Choose Layer > Add layer > Add vector layer
+3. Select the file [Somerset School Catchment Areas 2014-15](/data/Somerset School Catchment Areas 2014-15.geojson)
 
 ## WMS and WFS (and WMTS)
 
@@ -89,12 +96,13 @@ WMS and WFS are ways of dealing with geo data through web services.
 
 | Data | Service URL |
 | ---- | ----------- |
-| 
+| Taunton Allotments | http://inspire.misoportal.com/geoserver/taunton_deane_borough_council_allotments/wfs?service=wfs&version=2.0.0&request=GetCapabilities |
+| Taunton Parks and Recreation | http://inspire.misoportal.com/geoserver/taunton_deane_borough_council_parks_and_recreation_gardens/wfs?service=wfs&version=2.0.0&request=GetCapabilities |
+| Taunton Play areas | http://inspire.misoportal.com/geoserver/taunton_deane_borough_council_play_areas/wfs?service=wfs&version=2.0.0&request=GetCapabilities |
+| Taunton Tree Preservation Orders | http://inspire.misoportal.com/geoserver/taunton_deane_borough_council_tpos_06completed1/wfs?service=wfs&version=2.0.0&request=GetCapabilities |
+| Taunton Car Parks | http://inspire.misoportal.com/geoserver/taunton_deane_borough_council_car_parks/wfs?service=wfs&version=2.0.0&request=GetCapabilities |
 
-## Exercise: Add a WMS tile layer.
-
-
-
+Add WMTS: https://api.mapbox.com/styles/v1/mapbox/streets-v10/wmts?access_token=pk.eyJ1IjoibGlicmFyaWVzaGFja2VkIiwiYSI6IlctaDdxSm8ifQ.bxf1OpyYLiriHsZN33TD2A
 
 ## Geo-spatial databases
 
@@ -115,7 +123,6 @@ Take a database table: Libraries
 | Bath Central Library | Bath and North East Somerset |  |  |
 | Box | Wiltshire |  |  |
 | Newcastle Central Library | Newcastle |  |  |
-
 
 An individual is a member of Somerset.  Find all libraries in their authority.
 
@@ -153,12 +160,13 @@ There are many JavaScript libraries for creating maps that allow for full integr
 
 ## Online map tools
 
+If you're not a web developer, but still want to create online maps that as a content editor you can embed or publish, then there are plenty of options.
+
 Create account: [Mapbox](https://www.mapbox.com/)
 Create account: [Carto](https://carto.com/)
 
 ### Example: Carto postcode data.
-
-
-## Animated maps
-
-An animated map can be a great way of providing a data visualisation. See []
+(Assumes having created a Carto account)
+1. Login to Carto and select to import a new data file.
+2. Select the file [PostalArea.zip](/data/PostalArea.zip) and allow Carto to upload it.
+3. Play with the resulting data and create a map!
