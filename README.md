@@ -156,7 +156,7 @@ There are many JavaScript libraries for creating maps that allow for full integr
 ### Example: Create leaflet map
 1. Go to the [Leaflet quick start guide](http://leafletjs.com/examples/quick-start/)
 2. Follow instructions for creating your first map.
-3. See [example here](LeafletExample.html)
+3. See [Example Here](LeafletExample.html) for completed map.
 
 ## Online map tools
 
